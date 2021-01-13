@@ -9,7 +9,7 @@ body{
 
 .wrapper{
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /*parent container */
@@ -40,11 +40,14 @@ If the flex-continer display wasnt value as flex, you will have to code all of t
 
 .box{
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
-    flex-basis: 200px;
+
+    /* better to use flex; 1=flex grow, 0=flex shrink 200px=flex basis */
+    flex: 1 0 200px; 
+    
+    /* min-width: 500px; */
+    /* flex-grow: 1; */
+    /* flex-basis: 500px; */
     /* width:320px; */
-    /* min-width: 100px ; */
     /* float: left; */
     /* flex-grow: 1; */
 
@@ -55,17 +58,25 @@ If the flex-continer display wasnt value as flex, you will have to code all of t
 
 .one{
     background: red;
+    
+    /* flex-basis: 100px; */
     /* flex-grow: 2; */
     /* flex-shrink: 5; */
 }
 
 .two{
     background: blue;
+
+
+    /* flex-basis: 200px; */
     /* flex-grow: 3; */
     /* flex-shrink: 5; */
 }
 
 .three{
     background: green;
+
+
+    /* flex-basis: 300px; */
     /* flex-grow: 1; */
      /* flex-shrink: 6; the bigger the number the more it shrinks */
