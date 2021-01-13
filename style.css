@@ -1,0 +1,71 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*parent container */
+.flex-container{
+  display: flex;
+
+  /* background color so container can be seen */
+    background-color: white;
+
+/* makes content wrap to the next line */
+      flex-wrap: wrap;   
+
+     /*makes it wrap to the line above */
+       /* flex-wrap: wrap-reverse;  */
+
+     
+}
+
+
+/* 
+If the flex-continer display wasnt value as flex, you will have to code all of this in order for the white background to show back up */
+/* .flex-container:after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+.box{
+    height: 100px;
+    min-width: 200px;
+    flex-grow: 1;
+    flex-basis: 200px;
+    /* width:320px; */
+    /* min-width: 100px ; */
+    /* float: left; */
+    /* flex-grow: 1; */
+
+
+    /* experimenting if I made the background black and comment out .one background if the red box will go black
+    background-color: black;*/
+} 
+
+.one{
+    background: red;
+    /* flex-grow: 2; */
+    /* flex-shrink: 5; */
+}
+
+.two{
+    background: blue;
+    /* flex-grow: 3; */
+    /* flex-shrink: 5; */
+}
+
+.three{
+    background: green;
+    /* flex-grow: 1; */
+     /* flex-shrink: 6; the bigger the number the more it shrinks */
